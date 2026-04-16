@@ -29,7 +29,21 @@ frontend/.env.local
 models/
 
 # Data raw (datasets publics téléchargeables)
-data/raw/
+data/raw/**
+!data/raw/
+!data/raw/README.md
+!data/raw/Go_emotions/
+!data/raw/Go_emotions/README.md
+!data/raw/daily_dialog/
+!data/raw/daily_dialog/README.md
+!data/raw/daily_dialog/train/
+!data/raw/daily_dialog/train/README.md
+!data/raw/daily_dialog/validation/
+!data/raw/daily_dialog/validation/README.md
+!data/raw/daily_dialog/test/
+!data/raw/daily_dialog/test/README.md
+!data/raw/skill_talk/
+!data/raw/skill_talk/README.md
 
 # Environment
 .env
