@@ -227,4 +227,8 @@ python3 -m pytest backend/tests/unit -q
 - Improve observability and model readiness diagnostics
 
 
+
+
+
+
 Omar PIRO - IA/ML Engineer
