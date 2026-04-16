@@ -30,16 +30,25 @@ This repo is useful as both:
 ## Request Flow
 
 ```mermaid
-flowchart LR
-    A[User sends message in React UI] --> B[POST /chat]
-    B --> C[Trim recent message history]
-    C --> D[Detect emotion]
-    D --> E[Choose CBT strategy]
-    E --> F[Build system prompt]
-    F --> G[Run local Qwen model]
-    G --> H[Clean and normalize response]
-    H --> I[Return emotion, strategy, response]
+flowchart TD
+    A[1. User message] --> B[2. POST /chat]
+    B --> C[3. Trim history]
+    C --> D[4. Detect emotion]
+    D --> E[5. Pick CBT strategy]
+    E --> F[6. Build prompt]
+    F --> G[7. Run local model]
+    G --> H[8. Clean response]
+    H --> I[9. Return JSON]
 ```
+
+Step by step:
+
+1. The React client sends the conversation as `messages[]`.
+2. FastAPI trims the history to keep the request lightweight.
+3. The backend detects the emotion in the latest user message.
+4. A CBT strategy is selected from that emotional signal.
+5. The prompt is assembled and sent to the local model.
+6. The generated answer is cleaned and returned with `emotion`, `strategy`, and `response`.
 
 ## Architecture
 
@@ -84,6 +93,12 @@ flowchart TB
 | NLP | Transformers, Torch |
 | Modeling | Local Qwen fine-tuned artifacts + emotion classification |
 | UX Goal | Calm, supportive CBT chat experience with structured outputs |
+
+## Model Choice
+
+I deliberately chose the smallest model variant for training and local inference to keep compute usage, storage cost, and iteration time under control.
+
+That was a practical engineering decision, not a quality ceiling. If this project is upgraded to a larger model, the app should produce stronger, more nuanced, and more reliable responses.
 
 ## Project Structure
 
@@ -200,15 +215,3 @@ python3 -m pytest backend/tests/unit -q
 - Add authentication and user sessions
 - Add deployment and CI/CD
 - Improve observability and model readiness diagnostics
-
-## Why It Reads Well On GitHub And Upwork
-
-- Clear product framing
-- Clean architecture story
-- Real technical stack
-- Concrete run instructions
-- Professional documentation with simple diagrams
-
-## License
-
-No license file is currently defined in this repository.
