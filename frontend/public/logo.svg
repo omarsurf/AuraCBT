@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#10B981"/>
+    </linearGradient>
+    <linearGradient id="icon" x1="16" y1="12" x2="48" y2="52" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#E9D5FF" stop-opacity="0.9"/>
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="64" height="64" rx="16" fill="url(#bg)"/>
+  <!-- Brain left lobe -->
+  <path d="M22 18 C18 18 14 21 14 26 C12 27 10 30 11 33 C10 36 12 39 15 40 C15 43 17 46 20 46 C21 48 23 50 26 50 L32 50 L32 14 C29 14 25 15 22 18 Z"
+        fill="url(#icon)" opacity="0.95"/>
+  <!-- Brain right lobe -->
+  <path d="M42 18 C46 18 50 21 50 26 C52 27 54 30 53 33 C54 36 52 39 49 40 C49 43 47 46 44 46 C43 48 41 50 38 50 L32 50 L32 14 C35 14 39 15 42 18 Z"
+        fill="url(#icon)" opacity="0.85"/>
+  <!-- Center line -->
+  <line x1="32" y1="14" x2="32" y2="50" stroke="#8B5CF6" stroke-width="1.5" opacity="0.4"/>
+  <!-- Brain folds left -->
+  <path d="M20 28 Q17 31 20 34" stroke="#8B5CF6" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.5"/>
+  <path d="M18 38 Q16 40 19 42" stroke="#8B5CF6" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.4"/>
+  <!-- Brain folds right -->
+  <path d="M44 28 Q47 31 44 34" stroke="#10B981" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.5"/>
+  <path d="M46 38 Q48 40 45 42" stroke="#10B981" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.4"/>
+  <!-- Heart pulse -->
+  <path d="M24 33 L27 33 L29 28 L32 38 L35 28 L37 33 L40 33"
+        stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.9"/>
+</svg>

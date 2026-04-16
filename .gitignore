@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+env/
+
+# Tests
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Jupyter
+notebooks/.ipynb_checkpoints/
+*.ipynb_checkpoints/
+
+# Node
+frontend/node_modules/
+frontend/dist/
+frontend/.env.local
+
+# Models (trop lourds pour GitHub - utiliser HuggingFace Hub)
+models/
+
+# Data raw (datasets publics téléchargeables)
+data/raw/
+
+# Environment
+.env
+*.env
+
+# macOS
+.DS_Store
+**/.DS_Store
+
+# IDE
+.vscode/
+.idea/
