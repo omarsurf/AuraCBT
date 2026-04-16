@@ -19,6 +19,16 @@ This repo is useful as both:
 - a clean FastAPI + React portfolio project
 - a strong base for future work in memory, safety, auth, and deployment
 
+## Screenshots
+
+### Welcome Screen
+
+![AuraCBT welcome screen](./docs/screenshots/aura-home.png)
+
+### Emotion-Aware Chat
+
+![AuraCBT chat interface showing an emotion-aware CBT response](./docs/screenshots/aura-chat.png)
+
 ## Why This Project Stands Out
 
 - Local-first inference: no external chat API is required for the main response flow.
