@@ -1,4 +1,4 @@
-# Coach NLP
+# AuraCBT
 
 > Emotion-aware CBT chat assistant built with FastAPI, React, and local LLM inference.
 
@@ -9,7 +9,7 @@
 
 ## Overview
 
-Coach NLP turns a notebook-based CBT pipeline into a product-style web app.
+AuraCBT turns a notebook-based CBT pipeline into a product-style web app.
 
 Instead of acting like a generic chatbot, the system analyzes the latest user message, detects the dominant emotion, selects a CBT strategy, builds a guided prompt, runs a local language model, and returns a structured response for the UI.
 
@@ -215,3 +215,6 @@ python3 -m pytest backend/tests/unit -q
 - Add authentication and user sessions
 - Add deployment and CI/CD
 - Improve observability and model readiness diagnostics
+
+
+Omar PIRO - IA/ML Engineer
